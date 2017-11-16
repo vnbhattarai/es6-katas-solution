@@ -1,5 +1,6 @@
 // 2: template strings - multiline
 // To do: make all tests pass, leave the asserts unchanged!
+const assert = require("assert");
 
 describe("template string, can contain multiline content", function() {
 	it("a normal string can`t span across multiple lines", function() {
@@ -16,9 +17,9 @@ line2`;
 
 	it("even over more than two lines", function() {
 		var multiline = `line 1
-                      line 2
-                      line 3
-                      line 4`;
+											line 2
+											line 3
+											line 4`;
 		assert.equal(multiline.split("\n").length, 4);
 	});
 
