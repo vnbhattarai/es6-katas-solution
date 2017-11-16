@@ -1,0 +1,22 @@
+{
+	"name": "es6-katas-solution",
+	"version": "1.0.0",
+	"main": "index.js",
+	"repository": "git@github.com:vnbhattarai/es6-katas-solution.git",
+	"author": "Vinaya <vnbhattarai@protonmail.ch>",
+	"license": "MIT",
+	"scripts": {
+		"test": "mocha --require babel-polyfill --require babel-register --colors --recursive"
+	},
+	"devDependencies": {
+		"babel-polyfill": "^6.26.0",
+		"babel-preset-env": "^1.6.1",
+		"babel-register": "^6.26.0",
+		"chai": "^4.1.2",
+		"codecov": "^3.0.0",
+		"jsdom": "^11.3.0",
+		"jsdom-global": "^3.0.2",
+		"mocha": "^4.0.1",
+		"nyc": "^11.3.0"
+	}
+}
