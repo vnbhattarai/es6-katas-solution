@@ -1,5 +1,6 @@
 // 7: block scope - let
 // To do: make all tests pass, leave the asserts unchanged!
+const assert = require("assert");
 
 describe("`let` restricts the scope of the variable to the current block", () => {
 	describe("`let` vs. `var`", () => {
