@@ -25,7 +25,7 @@ describe("tagged template strings, are an advanced form of template strings", fu
 			it("expressions are NOT passed to it", function() {
 				let a = ",";
 				var tagged = tagFunction`one${a}two`;
-				assert.deepEqual(tagged, [ "one", "two" ]);
+				assert.deepEqual(tagged, ["one", "two"]);
 			});
 		});
 
@@ -52,7 +52,11 @@ describe("tagged template strings, are an advanced form of template strings", fu
 					// using the new ES6 rest syntax
 					return allValues;
 				}
-				assert.deepEqual(valuesOnly`uno=${one}, dos=${two}, tres=${three}`, [ 1, 2, 3 ]);
+				assert.deepEqual(valuesOnly`uno=${one}, dos=${two}, tres=${three}`, [
+					1,
+					2,
+					3
+				]);
 			});
 		});
 	});
