@@ -4,12 +4,12 @@ const assert = require("assert");
 
 describe("destructuring can also have default values", () => {
 	it("for an empty array", () => {
-		const [ a = 1 ] = [];
+		const [a = 1] = [];
 		assert.equal(a, 1);
 	});
 
 	it("for a missing value", () => {
-		const [ b = 2 ] = [ , ];
+		const [b = 2] = [,];
 		assert.equal(b, 2);
 	});
 
@@ -24,7 +24,7 @@ describe("destructuring can also have default values", () => {
 	});
 
 	it("also a string works with defaults", () => {
-		const [ a, b = 2 ] = "1";
+		const [a, b = 2] = "1";
 		assert.equal(a, "1");
 		assert.equal(b, 2);
 	});

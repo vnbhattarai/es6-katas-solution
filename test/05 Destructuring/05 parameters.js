@@ -14,10 +14,10 @@ describe("destructuring function parameters", () => {
 		});
 
 		it("multiple params from array/object", () => {
-			const fn = ([ { name } ]) => {
+			const fn = ([{ name }]) => {
 				assert.equal(name, "Alice");
 			};
-			const users = [ { name: "Alice", id: 42 } ];
+			const users = [{ name: "Alice", id: 42 }];
 			fn(users);
 		});
 	});
@@ -33,19 +33,19 @@ describe("destructuring function parameters", () => {
 
 		it("for a missing array value", () => {
 			const defaultUser = { id: 23, name: "Joe" };
-			const fn = ([ user ]) => {
+			const fn = ([user]) => {
 				assert.deepEqual(user, defaultUser);
 			};
-			fn([ defaultUser ]);
+			fn([defaultUser]);
 		});
 
 		it("mix of parameter types", () => {
-			const fn = (id, [ arr ], { obj }) => {
+			const fn = (id, [arr], { obj }) => {
 				assert.equal(id, 1);
 				assert.equal(arr, 2);
 				assert.equal(obj, 3);
 			};
-			fn(1, [ 2 ], { obj: 3 });
+			fn(1, [2], { obj: 3 });
 		});
 	});
 });
