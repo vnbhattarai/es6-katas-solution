@@ -23,3 +23,4 @@ describe("unicode strings", () => {
     assert.equal(nuclear, "no more ☢");
   });
 });
+
