@@ -6,10 +6,8 @@
   "author": "Vinaya <vnbhattarai@protonmail.ch>",
   "license": "MIT",
   "scripts": {
-    "test":
-      "mocha --require babel-polyfill --require babel-register --colors --recursive",
-    "watch":
-      "mocha --watch --require babel-polyfill --require babel-register --colors --recursive"
+    "test": "mocha --require babel-polyfill --require babel-register --colors --recursive",
+    "watch": "mocha --watch --require babel-polyfill --require babel-register --colors --recursive"
   },
   "devDependencies": {
     "babel-polyfill": "^6.26.0",
@@ -17,8 +15,8 @@
     "babel-register": "^6.26.0",
     "chai": "^4.1.2",
     "codecov": "^3.0.0",
-    "jsdom": "^11.3.0",
+    "jsdom": "^11.6.1",
     "jsdom-global": "^3.0.2",
-    "mocha": "^4.0.1"
+    "mocha": "^5.0.0"
   }
 }
